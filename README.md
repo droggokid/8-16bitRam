@@ -96,12 +96,16 @@ A 2-to-1 multiplexer, built from basic logic components, selects one of two 8-bi
 ## Complete Module
 
 The complete RAM module integrates the data cells (registers), decoder for writing, and multiplexer for reading into a cohesive 2-word, 8-bit RAM system.  
-![Complete circuit](https://github.com/user-attachments/assets/9b9e4865-793e-4204-bc82-2e0986ff8a8a)
+
 
 ---
 
 ## Complete Module video
 https://github.com/user-attachments/assets/cd549d61-85f2-4c56-80bd-07bf33319462
+
+
+https://github.com/user-attachments/assets/f9848a3d-4bcf-469e-83ea-c6e5bb603f0c
+
 
 In this video, I begin by setting the address to 0, which corresponds to Register A, and setting the data bus to 11110000. I then perform a write operation, and the output becomes 11110000. Next, I reset the data write signal and change the address to 1 (corresponding to Register B), then reset the data bus. I set the data bus to 00001111 and perform another write operation, which outputs 00001111. Finally, I reset the data bus again and switch back to address 0, demonstrating that the circuit's output returns to 11110000, this is the data stored in Register A.
 ---
