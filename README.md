@@ -96,14 +96,11 @@ A 2-to-1 multiplexer, built from basic logic components, selects one of two 8-bi
 ## Complete Module
 
 The complete RAM module integrates the data cells (registers), decoder for writing, and multiplexer for reading into a cohesive 2-word, 8-bit RAM system.  
-
+![Complete circuit](https://github.com/user-attachments/assets/9b9e4865-793e-4204-bc82-2e0986ff8a8a)
 
 ---
 
 ## Complete Module video
-https://github.com/user-attachments/assets/cd549d61-85f2-4c56-80bd-07bf33319462
-
-
 https://github.com/user-attachments/assets/f9848a3d-4bcf-469e-83ea-c6e5bb603f0c
 
 
