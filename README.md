@@ -43,8 +43,4 @@ This dual-stage process prevents unintended data changes during propagation dela
 ---
 
 ## Video Demonstration
-
-<video width="640" height="360" controls>
-  <source src="diagrams/video/D-Type Flip Flop compressed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/422db3e2-5637-44bd-833b-c0d6cd82c5c4
