@@ -9,10 +9,12 @@ public:
     ClkSignal();
     ~ClkSignal();
 
+    bool getValue();
+
 private:
     void run();
 
-    unsigned int value;
+    bool value;
     std::atomic<bool> running; 
     std::thread clock_thread;
 };

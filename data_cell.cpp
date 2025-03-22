@@ -1,7 +1,7 @@
 #include "data_cell.hpp"
 
-DataCell::DataCell() 
-    : input_1(0), input_2(0), output(0), clk(0)
+DataCell::DataCell(ClkSignal& clk) 
+    : input_1(0), input_2(0), output(0), clock(clk)
 {
 }
 
@@ -31,10 +31,6 @@ unsigned int DataCell::getOutput() const {
     return output;
 }
 
-void DataCell::setClk(unsigned int val) {
-    clk = val;
-}
-
-unsigned int DataCell::getClk() const {
-    return clk;
+bool DataCell::getClk() const {
+    return clock.getValue();
 }
