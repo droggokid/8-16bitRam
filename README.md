@@ -100,6 +100,12 @@ The complete RAM module integrates the data cells (registers), decoder for writi
 
 ---
 
+## Complete Module video
+https://github.com/user-attachments/assets/cd549d61-85f2-4c56-80bd-07bf33319462
+
+In this video, I begin by setting the address to 0, which corresponds to Register A, and setting the data bus to 11110000. I then perform a write operation, and the output becomes 11110000. Next, I reset the data write signal and change the address to 1 (corresponding to Register B), then reset the data bus. I set the data bus to 00001111 and perform another write operation, which outputs 00001111. Finally, I reset the data bus again and switch back to address 0, demonstrating that the circuit's output returns to 11110000, this is the data stored in Register A.
+---
+
 This design demonstrates the core principles of memory:
 - **Storage:** Using D-type flip-flops to store individual bits.
 - **Organization:** Combining flip-flops into registers to form words.
