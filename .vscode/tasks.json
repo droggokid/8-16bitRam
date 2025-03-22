@@ -9,6 +9,8 @@
         "-g",
         "main.cpp",
         "clk_signal.cpp",
+        "data_cell.cpp",
+        "register.cpp",
         "-o",
         "${workspaceFolder}\\main.exe"
       ],
