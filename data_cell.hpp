@@ -8,23 +8,21 @@ public:
     DataCell(ClkSignal& clk);
     ~DataCell();
 
-    void setInput1(unsigned int val);
-    unsigned int getInput1() const;
+    void setInput(bool val);
+    bool getInput() const;
 
-    void setInput2(unsigned int val);
-
-    unsigned int getInput2() const;
-
-    void setOutput(unsigned int val);
-    unsigned int getOutput() const;
+    void setOutput(bool val);
+    bool getOutput() const;
 
     bool getClk() const;
+    
+    void update();
 
 private:
-    unsigned int input_1;
-    unsigned int input_2;
-    unsigned int output;
-    ClkSignal& clock; 
+    bool input;
+    bool output;
+    ClkSignal& clock;
+    bool prev_clk;
 };
 
 #endif

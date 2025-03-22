@@ -6,7 +6,7 @@ Register::Register(ClkSignal& clock) : clock(clock), dataCells{DataCell(clock), 
 
 Register::~Register() {}
 
-DataCell& Register::getRegister(int index) 
+DataCell& Register::getDataCell(int index) 
 {
     return dataCells[index];
 }

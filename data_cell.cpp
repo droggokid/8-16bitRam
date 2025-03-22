@@ -1,36 +1,42 @@
 #include "data_cell.hpp"
 
 DataCell::DataCell(ClkSignal& clk) 
-    : input_1(0), input_2(0), output(0), clock(clk)
+    : input(0), output(0), clock(clk), prev_clk(clock.getValue())
 {
 }
 
 DataCell::~DataCell() {}
 
-void DataCell::setInput1(unsigned int val) {
-    input_1 = val;
+void DataCell::setInput(bool val) 
+{
+    input = val;
 }
 
-unsigned int DataCell::getInput1() const {
-    return input_1;
+bool DataCell::getInput() const 
+{
+    return input;
 }
 
-void DataCell::setInput2(unsigned int val) {
-    input_2 = val;
-}
 
-unsigned int DataCell::getInput2() const {
-    return input_2;
-}
-
-void DataCell::setOutput(unsigned int val) {
+void DataCell::setOutput(bool val) 
+{
     output = val;
 }
 
-unsigned int DataCell::getOutput() const {
+bool DataCell::getOutput() const 
+{
     return output;
 }
 
-bool DataCell::getClk() const {
+bool DataCell::getClk() const 
+{
     return clock.getValue();
+}
+
+void DataCell::update() {
+    bool curr_clk = getClk();
+    if (!prev_clk && curr_clk) {
+        output = input;
+    }
+    prev_clk = curr_clk;
 }

@@ -11,6 +11,8 @@
         "clk_signal.cpp",
         "data_cell.cpp",
         "register.cpp",
+        "decoder.cpp",
+        "data_bus.hpp",
         "-o",
         "${workspaceFolder}\\main.exe"
       ],

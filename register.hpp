@@ -10,7 +10,7 @@ class Register
         Register(ClkSignal& clock);
         ~Register();
 
-        DataCell& getRegister(int index);
+        DataCell& getDataCell(int index);
 
     private:
         ClkSignal& clock;
