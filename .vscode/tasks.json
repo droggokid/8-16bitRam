@@ -12,7 +12,8 @@
         "data_cell.cpp",
         "register.cpp",
         "decoder.cpp",
-        "data_bus.hpp",
+        "data_bus.cpp",
+        "mux.cpp",
         "-o",
         "${workspaceFolder}\\main.exe"
       ],

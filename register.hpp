@@ -10,10 +10,13 @@ class Register
         Register(ClkSignal& clock);
         ~Register();
 
-        DataCell& getDataCell(int index);
+        unsigned char getValue();
 
+        DataCell& getDataCell(int index);
+        
     private:
         ClkSignal& clock;
+        unsigned char value;
         std::array<DataCell, 8> dataCells;
 };
 
